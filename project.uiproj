@@ -1,0 +1,6 @@
+{
+  "Name": "Robot 3 E-Commerce Books Web Scraper",
+  "ProjectType": "Process",
+  "Description": "Scrape book data from a book website and calculate inventory value of stock on hand",
+  "MainFile": "Main.xaml"
+}
