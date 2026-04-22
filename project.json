@@ -4,7 +4,8 @@
   "description": "Scrape book data from a book website and calculate inventory value of stock on hand",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[26.2.4]"
+    "UiPath.System.Activities": "[26.2.4]",
+    "UiPath.UIAutomation.Activities": "[25.10.20]"
   },
   "webServices": [],
   "entitiesStores": [],
