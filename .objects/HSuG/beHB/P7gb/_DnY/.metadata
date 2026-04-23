@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Tipping the Velvet",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "_DnYLHPlXkeGGtW1j0lTEg",
+  "Reference": "V11C_pBn0UKv8S9DuAAhVA/_DnYLHPlXkeGGtW1j0lTEg",
+  "ParentRef": "V11C_pBn0UKv8S9DuAAhVA/P7gb9c0Gw0CyXD5aC7x_hQ",
+  "Created": "2026-04-23T16:23:09.7425099Z",
+  "Updated": "2026-04-23T16:23:09.7425099Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
