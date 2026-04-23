@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_YHIAUMVEkeOEVfVxzokKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="books.toscrape.com" CVScreenId="083dd949-c0d2-4c07-8e8e-1440a9fe3dc2" CvElementArea="1755, 895, 90, 52" CvTextArea="1778, 911, 42, 19" CvTextArgument="next" CvType="Button" DesignTimeRectangle="1758, 897, 83, 47" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='next' tag='A' /&gt;" Guid="1971e0a8-4a23-4dce-8fe6-fae444f18fb6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='All products | Books to Scrape - Sandbox' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1eafcf23f5e1fa55c6a8cfae05933633.png" xmlns="">0kdblbT3rPk2VzRimdW567A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
