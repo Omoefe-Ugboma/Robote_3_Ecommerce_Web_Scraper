@@ -41,6 +41,7 @@
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -98,7 +99,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="582.6666666666666,2318.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="524,2638.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -170,13 +171,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Attach to Books to Scrape Website" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,2238.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="6faeb497-2929-49c6-9bf0-e60cd991ccdf" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Attach to Books to Scrape Website" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,2558.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="6faeb497-2929-49c6-9bf0-e60cd991ccdf" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,2044" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,2364" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Default="0" Name="PageIndex" />
             </Sequence.Variables>
@@ -185,9 +186,9 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleWhile Condition="[PageIndex&lt;=10]" CurrentIndex="[PageIndex]" DisplayName="While Page" sap:VirtualizedContainerService.HintSize="488,1936" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="49">
+            <ui:InterruptibleWhile Condition="[PageIndex&lt;=10]" CurrentIndex="[PageIndex]" DisplayName="While Page" sap:VirtualizedContainerService.HintSize="488,2256" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="49">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1804" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,2124" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Int32" Default="0" Name="ListingIndex" />
                   </Sequence.Variables>
@@ -198,12 +199,13 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="452,124" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[PageIndex.ToString]" />
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Scraping Page: &quot;+(PageIndex+1).ToString]" />
-                  <ui:InterruptibleWhile Condition="[ListingIndex&lt;10]" CurrentIndex="[ListingIndex]" DisplayName="While Listing Number Limit" sap:VirtualizedContainerService.HintSize="452,1257.3333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2" MaxIterations="20">
+                  <ui:InterruptibleWhile Condition="[ListingIndex&lt;10]" CurrentIndex="[ListingIndex]" DisplayName="While Listing Number Limit" sap:VirtualizedContainerService.HintSize="452,1577.3333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2" MaxIterations="20">
                     <ui:InterruptibleWhile.Body>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,1125.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,1445.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <Sequence.Variables>
-                          <Variable x:TypeArguments="x:Int32" Default="0" Name="ListingNumber" />
                           <Variable x:TypeArguments="x:String" Name="PageURL" />
+                          <Variable x:TypeArguments="x:Int32" Default="0" Name="ListingNumber" />
+                          <Variable x:TypeArguments="x:String" Name="BookTitle" />
                         </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -232,6 +234,12 @@
                         </uix:NClick>
                         <uix:NGetUrl CurrentUrl="[PageURL]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="NGetUrl_1" ScopeIdentifier="6faeb497-2929-49c6-9bf0-e60cd991ccdf" Version="V5" />
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[PageURL]" />
+                        <uix:NGetText DisplayName="Get Text 'A Light in the Attic'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="6faeb497-2929-49c6-9bf0-e60cd991ccdf" TextString="[BookTitle]" Version="V5">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html" CVScreenId="981d8812-a97b-47d3-af80-a89e84b9662e" ContentHash="h4cMYyONW0W95HRkFtxnmw" DesignTimeRectangle="982, 464, 859, 58" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' parentclass='col-sm-6 product_main' /&gt;" Guid="c9af9078-77d6-4ed2-9a77-656a19a317c2" InformativeScreenshot="c695c08d104050c9d00fb553b6afac38.png" Reference="V11C_pBn0UKv8S9DuAAhVA/4bQ7ZT8ZjE-Tss62lEMOrw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*| Books to Scrape - Sandbox' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Book Title: &quot;+BookTitle]" />
                         <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" ScopeIdentifier="6faeb497-2929-49c6-9bf0-e60cd991ccdf" Version="V5" />
                       </Sequence>
                     </ui:InterruptibleWhile.Body>

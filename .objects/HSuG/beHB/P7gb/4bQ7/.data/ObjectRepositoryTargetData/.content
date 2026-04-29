@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="h4cMYyONW0W95HRkFtxnmw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html" CVScreenId="981d8812-a97b-47d3-af80-a89e84b9662e" DesignTimeRectangle="982, 464, 859, 58" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' parentclass='col-sm-6 product_main' /&gt;" Guid="c9af9078-77d6-4ed2-9a77-656a19a317c2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*| Books to Scrape - Sandbox' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="c695c08d104050c9d00fb553b6afac38.png" xmlns="">0vx_uFh1wAUCdg1scWdz3vw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
