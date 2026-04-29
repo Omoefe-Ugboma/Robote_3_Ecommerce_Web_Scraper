@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Price",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "qRJc8LqUzkSHGaxfeNfOLA",
+  "Reference": "V11C_pBn0UKv8S9DuAAhVA/qRJc8LqUzkSHGaxfeNfOLA",
+  "ParentRef": "V11C_pBn0UKv8S9DuAAhVA/P7gb9c0Gw0CyXD5aC7x_hQ",
+  "Created": "2026-04-29T18:25:51.5865689Z",
+  "Updated": "2026-04-29T18:25:51.5865689Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

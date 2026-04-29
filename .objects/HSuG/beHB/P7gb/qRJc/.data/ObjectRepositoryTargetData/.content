@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Xv5qYKmBXUK-wkMVNAGspw" Reference="V11C_pBn0UKv8S9DuAAhVA/qRJc8LqUzkSHGaxfeNfOLA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="books.toscrape.com/catalogue/tipping-the-velvet_999/index.html" CVScreenId="299ede05-7e0b-4f73-8b3f-9a9528f5b45b" CvType="AnyWordGroup" DesignTimeRectangle="924, 696, 917, 55" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TD' /&gt;" Guid="0f9b9a00-77ad-4d67-85ca-ae128956deac" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*| Books to Scrape - Sandbox' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="299ede05-7e0b-4f73-8b3f-9a9528f5b45b" CvTextArea="89, 713, 151, 25" CvTextArgument="Price (incl. tax)" CvType="Text" DesignTimeRectangle="79, 696, 845, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TH' rowName='Price (incl. tax)' aaname='Price (incl. tax)' check:innerText='Price (incl. tax)' /&gt;" Guid="88d1302b-63b3-4132-b53f-47fc17015a00" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="df111f3630fae265b6b97cfacdf828ef.png" xmlns="">095KFimCrlUK3W3ArE2nEIQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
